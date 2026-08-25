@@ -1,0 +1,76 @@
+.card {
+  background-color: #fff;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 14px 20px 10px;
+}
+
+.card:hover {
+  background-color: #fafafa;
+}
+
+.resumo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-height: 72px;
+}
+
+.foto {
+  width: 68px;
+  height: 68px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid #111;
+  flex: 0 0 auto;
+}
+
+.nome {
+  color: #111;
+  font-size: 18px;
+  line-height: 1.2;
+  margin: 0 0 3px;
+}
+
+.perfil {
+  color: #111;
+  font-size: 13px;
+}
+
+.perfil span {
+  margin: 0 8px;
+}
+
+.detalhes {
+  border-top: 2px dashed #777;
+  margin-top: 11px;
+  padding-top: 7px;
+  font-size: 13px;
+  line-height: 1.42;
+}
+
+.detalhes p {
+  display: grid;
+  grid-template-columns: 74px 1fr;
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.detalhes strong {
+  color: #111;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 12px 14px 10px;
+  }
+
+  .resumo {
+    gap: 12px;
+  }
+
+  .foto {
+    width: 58px;
+    height: 58px;
+  }
+}
